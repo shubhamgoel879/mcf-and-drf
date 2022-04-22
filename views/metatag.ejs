@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metatag Content Finder</title>
+    <link rel="stylesheet" href="/css/metatag.css">
+</head>
+<body>
+    <h1 id="h1-id">Metatag Content Finder</h1>
+    <div>
+        <form action="/metatag/contentFinder" method="POST" id="form">
+            <div id="form-div-id">
+                <input class="button-class" type="url" placeholder="Enter url" name="url" required>
+                <input class="button-class" type="text" placeholder="Enter metatag name" name="metatag_name" required>
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div id="content-id">
+        <p><span class="content-heading-class">Url: </span><span class="content-value-class"><%=url%></span></p>
+        <p><span class="content-heading-class">Meta Tag Name: </span><span class="content-value-class"><%=metatag_name%></span></p>
+        <p><span class="content-heading-class">Content: </span><span class="content-value-class"><%=content%></span></p>
+    </div>
+</body>
+</html>

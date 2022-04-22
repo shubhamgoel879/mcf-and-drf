@@ -1,0 +1,52 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#h1-id{
+    color: grey;
+    text-align: center;
+}
+#form-div-id{
+    width: 70vw;
+    margin: auto;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+.button-class{
+    border-style: none none solid none;
+    outline: none;
+    height:2rem;
+    width: 15rem;
+    border-color: grey;
+}
+.button-class:focus{
+    background-color: #eee;
+}
+#submit{
+    height:2rem;
+    width: 11rem;
+    border: 2px solid grey;
+    color:grey;
+    background-color: white;
+}
+#submit:hover{
+    transition: all .1s ease-in-out;
+    color:white;
+    background-color: grey;
+}
+#content-id{
+    margin:auto;
+    margin-top:10vh;
+    padding: 10px;
+    width:70vw;
+    min-height: 200px;
+    border: 2px solid grey;
+    border-radius: 0.5rem;
+}
+.content-heading-class{
+    color: grey;
+}
+.content-value-class{
+    color:blue;
+    word-wrap: break-word;
+}

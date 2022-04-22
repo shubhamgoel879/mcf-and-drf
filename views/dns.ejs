@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNS Records Finder</title>
+    <link rel="stylesheet" href="/css/dns.css">
+</head>
+<body>
+    <h1 id="h1-id">DNS Records Finder</h1>
+    <div>
+        <form action="/dns/recordFinder" method="POST" id="form">
+            <div id="form-div-id">
+                <input class="button-class" type="text" placeholder="Enter Domain Name" name="domain_name" required>
+                <input class="button-class" type="text" placeholder="Enter Record Name" name="record_name" required>
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div id="content-id">
+        <p><span class="content-heading-class">Domain Name: </span><span class="content-value-class"><%=domain_name%></span></p>
+        <p><span class="content-heading-class">Record Name: </span><span class="content-value-class"><%=record_name%></span></p>
+        <% if(records==undefined){%>
+            <p><span class="content-heading-class">Records: </span><span class="content-value-class">Records Not Found!</span></p>
+        <%}else{%>
+            <div>
+                <p class="content-heading-class">Records:</p>
+                <ul>
+                    <% for(let record of records){%>
+                        <li class="content-value-class"><%=JSON.stringify(record)%></li>
+                    <%}%>
+                </ul>
+            </div>
+        <%}%>
+    </div>
+</body>
+</html>

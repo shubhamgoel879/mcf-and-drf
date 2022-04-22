@@ -1,0 +1,19 @@
+{
+  "name": "metatag-and-dns",
+  "version": "1.0.0",
+  "description": "The first endpoint takes the url of a site and a metatag name and validate if the metatag is present or not, and shows that metatag content if present. The second endpoint takes the url of a site and a dns txt record and validate if the dns txt record is present in the domain or not.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dns": "^0.2.2",
+    "dom-parser": "^0.1.6",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "xmlhttprequest": "^1.8.0"
+  }
+}

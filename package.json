@@ -1,5 +1,5 @@
 {
-  "name": "metatag-and-dns",
+  "name": "mcf-and-drf",
   "version": "1.0.0",
   "description": "The first endpoint takes the url of a site and a metatag name and validate if the metatag is present or not, and shows that metatag content if present. The second endpoint takes the url of a site and a dns txt record and validate if the dns txt record is present in the domain or not.",
   "main": "index.js",

@@ -11,7 +11,7 @@ The DNS Records Finder takes the domain name and a record name and validate if r
     Hosted Link- https://mcf-and-drf.herokuapp.com/dns
     Video Link- https://drive.google.com/file/d/14vHIsNbiSZzPVO9BkO8BDu-XpN9pt2-J/view?usp=sharing
 
-Steps to tun the project on your PC-
+Steps to run the project on your PC-
     
     1.Download the Project.
     2.Run "npm start"

@@ -21,3 +21,8 @@ Steps to run the project on your PC-
         Click:  http://localhost:8000/dns - Will launch DNS Records Finder.
     4.Be sure to be connected to internet.
 
+
+Tech Used-
+    
+    NodeJS | Express | EJS | HTML | CSS  
+
